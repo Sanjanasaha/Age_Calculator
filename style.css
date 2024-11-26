@@ -1,0 +1,102 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;font-family: sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background-image: radial-gradient(circle, #cf5fad, #cc81c4, #cb9fd4, #cebade, #d8d3e3);
+    padding: 10px;
+    color: black;
+    position: relative;
+}
+h1{
+    background: #2E062B;
+    background: linear-gradient(to right, #2E062B 0%, #C40C6E 50%, #26122E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 10px;
+    margin-bottom: 60px;
+    text-decoration: underline;
+}
+.calculator{
+    width: 100%;
+    max-width: 600px;
+    position: absolute;
+    top: 22%;left: 28%;
+    text-align: center;
+}
+
+.calculator h1{
+    font-size: 70px;
+}
+
+
+.inputBox{
+    display: flex;
+    padding: 35px;
+    background-image: linear-gradient(to right, #902a71, #6d2364, #4b1c55, #2d1442, #13072e);
+    margin: 40px 0px;
+    border-radius: 8px;
+    align-items: center;
+    box-shadow:10px 10px 20px rgba(69, 65, 70, 0.856),-5px -5px  20px rgba(97, 83, 97, 0.733);
+}
+
+.inputBox input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-right: 20px;
+    padding: 15px 20px 15px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    position: relative;
+    color:#4d0f47;
+    font-weight: bold;
+}
+
+.inputBox button{
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    cursor: pointer;
+    color: rgb(48, 6, 41);
+    padding: 15px 30px;
+    font-weight: bold;
+    background: #902a71;
+    box-shadow:  5px 5px 10px #0a070a, inset -5px -5px 20px rgba(122, 70, 111, 0.16);
+}
+
+.inputBox button:active{
+    box-shadow: inset 5px 5px 10px #1f0a1f, -5px -5px 20px rgba(122, 70, 111, 0.16);
+}
+
+.inputBox input::-webkit-calendar-picker-indicator{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    position: absolute;
+    margin-top: 10px;
+    /* margin-left:90%; */
+    background-position: calc(100%-10px); 
+    height: auto;
+    background-size: 30px;
+    cursor: pointer;
+    
+}
+
+#difference{
+    margin-top: 50px;
+    font-size: 25px;
+    color: #a50f78;
+    font-weight: 700;
+    font-style: italic;
+    /* text-shadow: 2px 2px 6px #70307e; */
+    
+}
+#difference span{
+    color: #300b2d;
+}
